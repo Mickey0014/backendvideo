@@ -23,14 +23,15 @@ const userSchema = new Schema({
         type : String,
         required : true,
         trim : true,
-        index
+        index : true 
     },
     avatar : {
         type : String,
         required : true
     },
-    coverImange : {
-        type : String
+    coverImage : {
+        type : String,
+
     },
     watchhistory : [{
         type : Schema.Types.ObjectId,
