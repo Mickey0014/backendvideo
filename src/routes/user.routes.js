@@ -29,4 +29,4 @@ router.route("/register").post(
    router.route("/cover-image").patch(verifyJWT,upload.single("coverImage"),updateUsercoverImage)
    router.route("/c/:username").get(verifyJWT,getUserChannelProfile)
    router.route("/history").get(verifyJWT,getWatchHistory)
-export {router};
+   export {router};                                            
